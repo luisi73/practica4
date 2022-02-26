@@ -32,4 +32,4 @@ async function getIp () {
 
 getIp();
 
-setInterval(getIp, 10000)
+setInterval(getIp, 2000)
