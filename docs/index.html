@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <style>#map { height: 180px; }</style>
+	<title>Ver tu ip a tiempo real</title>
 </head>
-
 <body>
-    <h1>Frases de Breaking Bad</h1>
+    <h1>¿Cuál es mi IP y dónde está?</h1>
 
-    <p>
-        <span id="autor"></span><br />
-        <span id="frase"></span>
+    <p>      
+        Pais: <span id="pais"></span><br/>
+        Región: <span id="region"></span><br/>
+        Latitud: <span id="latitud"></span>º<br/>
+        Longitud:  <span id="longitud"></span>º
     </p>
-</body>
-<script src="./index.js"></script>
+    
+    <div id="map"></div>
 
+	<script src="app.js"></script>
+</body>
 </html>
