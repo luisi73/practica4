@@ -1,13 +1,6 @@
-fetch("https://aerodatabox.p.rapidapi.com/flights/%7BsearchBy%7D/KL1395/2020-06-10", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "aerodatabox.p.rapidapi.com",
-		"x-rapidapi-key": "SIGN-UP-FOR-KEY"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+
+const plane_url='https://api.aviationstack.com/v1/flights?access_key=5da857a71607c95cb9ed25a9934f0f3c'
+async function getPlanesData () {
+    const response = await fetch(plane_url);
+
+}
