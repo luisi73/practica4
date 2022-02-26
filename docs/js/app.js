@@ -18,11 +18,12 @@ const ipFind_url='https://freegeoip.app/json/'
 async function getIp () {
     const response = await fetch(ipFind_url);
     const data=await response.json();
-    const {country_name,region_name,latitude, longitude}= data;
+    const {ip,country_name,region_name,latitude, longitude}= data;
     
     map.setView([latitude, longitude], map.getZoom());
     marcador.setLatLng([latitude,longitude]);
 
+    document.getElementById('ip').textContent=ip;
     document.getElementById('pais').textContent=country_name;
     document.getElementById('region').textContent=region_name;
     document.getElementById('latitud').textContent=latitude.toFixed(1);

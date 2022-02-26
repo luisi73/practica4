@@ -7,21 +7,40 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <style>#map { height: 180px; }</style>
+    <style>#map { height: 400px; }</style>
 	<title>Ver tu ip a tiempo real</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>¿Cuál es mi IP y dónde está?</h1>
-
-    <p>      
-        Pais: <span id="pais"></span><br/>
-        Región: <span id="region"></span><br/>
-        Latitud: <span id="latitud"></span>º<br/>
-        Longitud:  <span id="longitud"></span>º
-    </p>
+<body id="page-top">
     
-    <div id="map"></div>
 
-	<script src="app.js"></script>
+      <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-10" id="map"></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h1>¿Cuál es mi IP y dónde está?</h1>
+                        <p class="text-black-50 mb-0">  
+                            Tu IP: <span id="ip"></span><br/>
+                            Pais: <span id="pais"></span><br/>
+                            Región: <span id="region"></span><br/>
+                            Latitud: <span id="latitud"></span>º<br/>
+                            Longitud:  <span id="longitud"></span>º
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+	<script src="./js/app.js"></script>
 </body>
 </html>
